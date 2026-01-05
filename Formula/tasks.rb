@@ -5,21 +5,21 @@
 class Tasks < Formula
   desc "Cross-session task management CLI for AI agents"
   homepage "https://github.com/baiirun/dotworld-tasks"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/baiirun/dotworld-tasks/releases/download/v0.4.0/dotworld-tasks_0.4.0_darwin_amd64.tar.gz"
-      sha256 "9ee3dd0bd7057ae906dfc5de9df17aca562753a506c33e27e65c2c316e7e50ab"
+      url "https://github.com/baiirun/dotworld-tasks/releases/download/v0.5.0/dotworld-tasks_0.5.0_darwin_amd64.tar.gz"
+      sha256 "8daa66ee8fca14429bf611d3018aa4413c932ed19eb6d03113c275c36b00bb93"
 
       def install
         bin.install "tasks"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/baiirun/dotworld-tasks/releases/download/v0.4.0/dotworld-tasks_0.4.0_darwin_arm64.tar.gz"
-      sha256 "b0ca37dca0248b4b415d370b414005e32d005513785b89868d91f5f3f2a93db6"
+      url "https://github.com/baiirun/dotworld-tasks/releases/download/v0.5.0/dotworld-tasks_0.5.0_darwin_arm64.tar.gz"
+      sha256 "795233601380326fb437fdb568b99f53e7e768dc91335b4e81a70c2ba43326ab"
 
       def install
         bin.install "tasks"
@@ -29,15 +29,15 @@ class Tasks < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/baiirun/dotworld-tasks/releases/download/v0.4.0/dotworld-tasks_0.4.0_linux_amd64.tar.gz"
-      sha256 "24153679fab5f52992438f28cff58414959934b6737fbde8f9427a8d216b1c78"
+      url "https://github.com/baiirun/dotworld-tasks/releases/download/v0.5.0/dotworld-tasks_0.5.0_linux_amd64.tar.gz"
+      sha256 "a864904eecba874738d659c432299a09955847b5e850d6ef0a3440ceb5668178"
       def install
         bin.install "tasks"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/baiirun/dotworld-tasks/releases/download/v0.4.0/dotworld-tasks_0.4.0_linux_arm64.tar.gz"
-      sha256 "ac577604f89da5c3b288264eaeb9f3f0ff4439861e3c62526fbb6f9b08d2bd12"
+      url "https://github.com/baiirun/dotworld-tasks/releases/download/v0.5.0/dotworld-tasks_0.5.0_linux_arm64.tar.gz"
+      sha256 "8b85b213ba702a4c43c3b434fb38c797c147f2c9f3b7f0a70cfa500b2fbf04dd"
       def install
         bin.install "tasks"
       end
