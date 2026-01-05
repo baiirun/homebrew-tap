@@ -5,21 +5,21 @@
 class Tasks < Formula
   desc "Cross-session task management CLI for AI agents"
   homepage "https://github.com/baiirun/dotworld-tasks"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/baiirun/dotworld-tasks/releases/download/v0.2.0/dotworld-tasks_0.2.0_darwin_amd64.tar.gz"
-      sha256 "6dba915acc86f0bebde10789663f89d4819c401ab6c17c7ea4930603bf0d95f8"
+      url "https://github.com/baiirun/dotworld-tasks/releases/download/v0.3.0/dotworld-tasks_0.3.0_darwin_amd64.tar.gz"
+      sha256 "62af44e5ce403792a2dcf1dbdde1f27da672d2f39e574223faf9903083f62b36"
 
       def install
         bin.install "tasks"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/baiirun/dotworld-tasks/releases/download/v0.2.0/dotworld-tasks_0.2.0_darwin_arm64.tar.gz"
-      sha256 "bfb1cdf8bc8aa1190a09b6ccc47f7334d93d08beed58fca6109227f85ac14f61"
+      url "https://github.com/baiirun/dotworld-tasks/releases/download/v0.3.0/dotworld-tasks_0.3.0_darwin_arm64.tar.gz"
+      sha256 "b798d074d59c694282e607ec97dd8c356a5adbe41a9529ca592e1ec950741a63"
 
       def install
         bin.install "tasks"
@@ -29,15 +29,15 @@ class Tasks < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/baiirun/dotworld-tasks/releases/download/v0.2.0/dotworld-tasks_0.2.0_linux_amd64.tar.gz"
-      sha256 "14965b8df93728d2591954db8d0a6fdd4350fd9f686b8a70a36d11730f49438a"
+      url "https://github.com/baiirun/dotworld-tasks/releases/download/v0.3.0/dotworld-tasks_0.3.0_linux_amd64.tar.gz"
+      sha256 "6be3cb93e061393a880e0629d3a350c43e4ede5ef813c3ac549295099844456e"
       def install
         bin.install "tasks"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/baiirun/dotworld-tasks/releases/download/v0.2.0/dotworld-tasks_0.2.0_linux_arm64.tar.gz"
-      sha256 "716b59560817d2f5e65715cd76944bd4872acfdf9d46df363a286195fcffcc4d"
+      url "https://github.com/baiirun/dotworld-tasks/releases/download/v0.3.0/dotworld-tasks_0.3.0_linux_arm64.tar.gz"
+      sha256 "b9330636937d30534d301f33b4e2abeb5f27c2388220c8bd259af6e310f3dbcc"
       def install
         bin.install "tasks"
       end
