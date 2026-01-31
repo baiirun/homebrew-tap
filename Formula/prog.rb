@@ -5,21 +5,21 @@
 class Prog < Formula
   desc "Cross-session task management CLI for AI agents"
   homepage "https://github.com/baiirun/prog"
-  version "0.12.3"
+  version "0.12.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/baiirun/prog/releases/download/v0.12.3/prog_0.12.3_darwin_amd64.tar.gz"
-      sha256 "c2bf6a9b7f08e165bc7dc6cdd25393e9cc264248bd5a465b3db33e93f2227dbf"
+      url "https://github.com/baiirun/prog/releases/download/v0.12.4/prog_0.12.4_darwin_amd64.tar.gz"
+      sha256 "c66b0989e983333f8ac9e3fac107a2201bbc5758157aaf96996113436ff602d4"
 
       def install
         bin.install "prog"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/baiirun/prog/releases/download/v0.12.3/prog_0.12.3_darwin_arm64.tar.gz"
-      sha256 "d37bbd9e75c5dee6bcf5385b08e2b82212125e3b829379fa725221280e2f24d3"
+      url "https://github.com/baiirun/prog/releases/download/v0.12.4/prog_0.12.4_darwin_arm64.tar.gz"
+      sha256 "520ecefff17e6da1e17d99be482d9510377c0f69469ef602d650b12d62ad58c5"
 
       def install
         bin.install "prog"
@@ -29,15 +29,15 @@ class Prog < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/baiirun/prog/releases/download/v0.12.3/prog_0.12.3_linux_amd64.tar.gz"
-      sha256 "ae97d334fc9dfbb59cfd0160d55439d0cdf5aeea76bde2f658667afa31109339"
+      url "https://github.com/baiirun/prog/releases/download/v0.12.4/prog_0.12.4_linux_amd64.tar.gz"
+      sha256 "249812d074179100a7781e5f677d42a0590a9cd285552f6052e079adce6f0fec"
       def install
         bin.install "prog"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/baiirun/prog/releases/download/v0.12.3/prog_0.12.3_linux_arm64.tar.gz"
-      sha256 "e394ebb9d6cb1d4ae42102def4773157a2453aff55bed3d4451c59cf0f3eae25"
+      url "https://github.com/baiirun/prog/releases/download/v0.12.4/prog_0.12.4_linux_arm64.tar.gz"
+      sha256 "6bccd7e6af2021e3c86217248810feec40ad0bdb475c2f6f87a5e5bbc95422cc"
       def install
         bin.install "prog"
       end
