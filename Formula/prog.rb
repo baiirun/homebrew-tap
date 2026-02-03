@@ -11,7 +11,7 @@ class Prog < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/baiirun/prog/releases/download/v0.13.0/prog_0.13.0_darwin_amd64.tar.gz"
-      sha256 "f4f14e117d476b2aaa1996dc9bb49a5f50591b035b83c25b7bd55fa62cd1158d"
+      sha256 "6c874ea6f44c74733384b54192616cd372d7dd75f4d97b384722d5717570662a"
 
       def install
         bin.install "prog"
@@ -19,7 +19,7 @@ class Prog < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/baiirun/prog/releases/download/v0.13.0/prog_0.13.0_darwin_arm64.tar.gz"
-      sha256 "e9a7fff17993bb264c046220ef0726ecebc4829204d7d1f12d07609312ac5b0a"
+      sha256 "874e2f5878a06401bc83f2779a0319eb9b91ccef30abe26ef77f888fd3c88ffb"
 
       def install
         bin.install "prog"
@@ -30,14 +30,14 @@ class Prog < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/baiirun/prog/releases/download/v0.13.0/prog_0.13.0_linux_amd64.tar.gz"
-      sha256 "afc00473f7081f0269bd98764466b221693bd5d29c60ad22ee85ce97158d1599"
+      sha256 "9c4e7f1eddd213c0bd31827c9adf639c7635fb2d9da14b3100c4db8caee5e1f0"
       def install
         bin.install "prog"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/baiirun/prog/releases/download/v0.13.0/prog_0.13.0_linux_arm64.tar.gz"
-      sha256 "d87de84bc7d8bcb04a61c12e02f9c557afdb887cfbe730934da7f434f84dffb0"
+      sha256 "19aa8f8bab17a9ef5137825ab16b7132ae0036a9c5d6e4680016d83cefa2028c"
       def install
         bin.install "prog"
       end
