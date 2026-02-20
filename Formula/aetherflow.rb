@@ -5,21 +5,21 @@
 class Aetherflow < Formula
   desc "Async runtime for AI agent work scheduling"
   homepage "https://github.com/baiirun/aetherflow"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/baiirun/aetherflow/releases/download/v0.2.0/aetherflow_0.2.0_darwin_amd64.tar.gz"
-      sha256 "1fa99e16eaefba8d02d52cfddcc744a841a3ae8753d2a615de036fa6f3785383"
+      url "https://github.com/baiirun/aetherflow/releases/download/v0.3.0/aetherflow_0.3.0_darwin_amd64.tar.gz"
+      sha256 "26179d74960f4947f77883eb3f607d301ebb321c585493d2b5a20c189775a9d9"
 
       def install
         bin.install "af"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/baiirun/aetherflow/releases/download/v0.2.0/aetherflow_0.2.0_darwin_arm64.tar.gz"
-      sha256 "1064e787635e148d5ae7277c5711d41a04f43129fe1b196b9b6e2127fff6c6b7"
+      url "https://github.com/baiirun/aetherflow/releases/download/v0.3.0/aetherflow_0.3.0_darwin_arm64.tar.gz"
+      sha256 "d2489f3e59f329cb746fdb96186a18d62107f4f56d8cc74cea62bdc9ac512575"
 
       def install
         bin.install "af"
@@ -29,15 +29,15 @@ class Aetherflow < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/baiirun/aetherflow/releases/download/v0.2.0/aetherflow_0.2.0_linux_amd64.tar.gz"
-      sha256 "07d16b39666b4aa040f626a6edb60be22da37eb5a25c383d0939081418c952bb"
+      url "https://github.com/baiirun/aetherflow/releases/download/v0.3.0/aetherflow_0.3.0_linux_amd64.tar.gz"
+      sha256 "1065a33176c2901a20de61d6491dcbc26a0551eb70aca9c71c3cde2bae5073e5"
       def install
         bin.install "af"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/baiirun/aetherflow/releases/download/v0.2.0/aetherflow_0.2.0_linux_arm64.tar.gz"
-      sha256 "46030b15c26e989e48e6ebf3634c7bce03df1718445af30c60bba95a2580eed3"
+      url "https://github.com/baiirun/aetherflow/releases/download/v0.3.0/aetherflow_0.3.0_linux_arm64.tar.gz"
+      sha256 "fd6ee1d5734dde7d356c3e7d9357aa6b6d09a6045ff6f1daf0e54f106e519db9"
       def install
         bin.install "af"
       end
